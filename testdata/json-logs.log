@@ -1,0 +1,15 @@
+{"timestamp":"2024-03-10T08:00:01Z","level":"INFO","message":"Service started on port 8080","source":"api-gateway"}
+{"timestamp":"2024-03-10T08:00:02Z","level":"INFO","message":"Connected to Redis cluster at 10.0.1.50:6379","source":"cache"}
+{"timestamp":"2024-03-10T08:00:03Z","level":"INFO","message":"Worker pool initialized with 16 goroutines","source":"scheduler"}
+{"timestamp":"2024-03-10T08:01:12Z","level":"WARN","message":"Slow query detected: SELECT * FROM orders WHERE user_id = 48291 took 4.2s","source":"database"}
+{"timestamp":"2024-03-10T08:01:15Z","level":"ERROR","message":"Connection refused to payment service at 10.0.2.30:443","source":"payments"}
+{"timestamp":"2024-03-10T08:01:16Z","level":"ERROR","message":"Connection refused to payment service at 10.0.2.30:443","source":"payments"}
+{"timestamp":"2024-03-10T08:01:17Z","level":"ERROR","message":"Connection refused to payment service at 10.0.2.30:443","source":"payments"}
+{"timestamp":"2024-03-10T08:01:20Z","level":"WARN","message":"Circuit breaker opened for payment-service after 3 consecutive failures","source":"resilience"}
+{"timestamp":"2024-03-10T08:01:45Z","level":"ERROR","message":"Failed to process order a]1b2c3d4-e5f6-7890-abcd-ef1234567890: upstream timeout","source":"orders"}
+{"timestamp":"2024-03-10T08:02:00Z","level":"INFO","message":"Health check passed","source":"monitoring"}
+{"timestamp":"2024-03-10T08:02:30Z","level":"ERROR","message":"JWT token expired for user bob@example.com","source":"auth"}
+{"timestamp":"2024-03-10T08:02:31Z","level":"ERROR","message":"JWT token expired for user alice@example.com","source":"auth"}
+{"timestamp":"2024-03-10T08:02:32Z","level":"WARN","message":"Rate limit approaching: 950/1000 requests in current window","source":"api-gateway"}
+{"timestamp":"2024-03-10T08:03:00Z","level":"ERROR","message":"Disk usage at 92% on /var/log partition","source":"monitoring"}
+{"timestamp":"2024-03-10T08:03:15Z","level":"FATAL","message":"Unable to allocate memory for request buffer - OOM killer invoked","source":"api-gateway"}

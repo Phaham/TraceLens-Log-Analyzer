@@ -1,0 +1,48 @@
+2024-06-20 14:00:01 [INFO] Deployment v2.14.0 started by deploy-bot
+2024-06-20 14:00:05 [INFO] Rolling update: pod api-server-1 restarting
+2024-06-20 14:00:06 [INFO] Rolling update: pod api-server-2 restarting
+2024-06-20 14:00:10 [INFO] Application started successfully
+2024-06-20 14:00:11 [INFO] Database connection pool established (max=50)
+2024-06-20 14:00:12 [INFO] Migration check: schema is up to date
+2024-06-20 14:00:15 [WARN] Config key CACHE_TTL missing, using default 300s
+2024-06-20 14:01:00 [INFO] Request processed successfully for user c4a8f3e1-2b5d-4c6e-9f01-abcdef123456
+2024-06-20 14:01:02 [INFO] Request processed successfully for user d5b9g4f2-3c6e-5d7f-0a12-bcdefg234567
+2024-06-20 14:02:00 [WARN] Database connection pool utilization at 80% (40/50)
+2024-06-20 14:02:10 [WARN] Database connection pool utilization at 90% (45/50)
+2024-06-20 14:02:15 [ERROR] Database connection pool exhausted - request queued
+2024-06-20 14:02:16 [ERROR] Database connection pool exhausted - request queued
+2024-06-20 14:02:17 [ERROR] Database connection pool exhausted - request queued
+2024-06-20 14:02:18 [ERROR] Database connection pool exhausted - request queued
+2024-06-20 14:02:19 [ERROR] Database connection pool exhausted - request queued
+2024-06-20 14:02:20 [ERROR] Request timeout after 30s for endpoint /api/v1/orders
+2024-06-20 14:02:21 [ERROR] Request timeout after 30s for endpoint /api/v1/users
+2024-06-20 14:02:22 [ERROR] Request timeout after 30s for endpoint /api/v1/orders
+2024-06-20 14:02:25 [WARN] Goroutine count spike: 12847 (baseline: 200)
+2024-06-20 14:02:30 [ERROR] Failed to send email notification to ops@company.com: SMTP connection refused
+2024-06-20 14:02:31 [ERROR] Failed to send email notification to alerts@company.com: SMTP connection refused
+2024-06-20 14:02:35 [ERROR] Healthcheck failed: database ping timeout
+2024-06-20 14:02:36 [ERROR] Healthcheck failed: database ping timeout
+2024-06-20 14:02:40 [WARN] Load balancer marking instance api-server-1 as unhealthy
+2024-06-20 14:02:45 [ERROR] Panic recovered in handler: runtime error: index out of range [3] with length 2
+2024-06-20 14:02:46 [ERROR] Panic recovered in handler: runtime error: invalid memory address or nil pointer dereference
+2024-06-20 14:03:00 [FATAL] Database connection lost: dial tcp 10.0.1.20:5432: connect: connection refused
+2024-06-20 14:03:01 [ERROR] Cascade failure: cache invalidation failed after database disconnect
+2024-06-20 14:03:02 [ERROR] Cascade failure: session store unreachable
+2024-06-20 14:03:05 [FATAL] Out of memory error - heap alloc 3.8GB exceeds 4GB limit
+2024-06-20 14:03:06 [INFO] Graceful shutdown initiated
+2024-06-20 14:03:07 [WARN] 342 in-flight requests will be dropped
+2024-06-20 14:03:10 [INFO] Application shutdown complete
+2024-06-20 14:05:00 [INFO] Application started successfully (restart #1)
+2024-06-20 14:05:01 [INFO] Database connection pool established (max=50)
+2024-06-20 14:05:05 [WARN] Database connection pool utilization at 85% (43/50) immediately after startup
+2024-06-20 14:05:10 [ERROR] Database connection pool exhausted - request queued
+2024-06-20 14:05:15 [FATAL] Database connection lost: dial tcp 10.0.1.20:5432: connect: connection refused
+2024-06-20 14:05:16 [INFO] Graceful shutdown initiated
+2024-06-20 14:05:20 [INFO] Application shutdown complete
+2024-06-20 14:10:00 [INFO] Application started successfully (restart #2)
+2024-06-20 14:10:01 [INFO] Database connection pool established (max=100)
+2024-06-20 14:10:02 [INFO] Connected to standby database at 10.0.1.21:5432
+2024-06-20 14:10:10 [INFO] Request processed successfully
+2024-06-20 14:10:15 [WARN] Replication lag detected: 4.2s behind primary
+2024-06-20 14:10:30 [INFO] Request processed successfully
+2024-06-20 14:11:00 [INFO] System stabilized - all health checks passing
